@@ -10,7 +10,7 @@ import path from "path";
 
 const uploadManager = new Bytescale.UploadManager({
     fetchApi: nodeFetch, // Required for Node.js
-    apiKey: "public_12a1zDZwFToXgqT8MLbbDACXMhju", 
+    apiKey: "public_W23MSyb5C1TFqw31Ef2aFMABZieR", 
   });
 
 export const register = async (req, res) => {
@@ -203,7 +203,6 @@ export const logout = async (req, res) => {
 export const updateProfile = async (req, res) => {
     try {
         const { fullname, email, phoneNumber, bio, skills } = req.body;
-        
         const file = req.file;
         let resumeUrl = null; // Initialize resume URL to null
         let resumeOriginalName = null;
